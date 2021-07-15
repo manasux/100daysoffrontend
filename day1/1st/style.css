@@ -1,0 +1,125 @@
+/* Inter-400-700 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/* Lexend Deca - 400 */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainbg: hsl(233, 47%, 7%);
+    --cardbg: hsl(244, 38%, 16%);
+    --softvio: hsl(277, 64%, 30%);
+
+    --main_head: hsl(0, 0%, 100%);
+    --main_para: hsla(0, 0%, 100%, 0.75);
+    --stat_head: hsla(0, 0%, 100%, 0.6);
+
+    --font_size: 15px;
+
+    --ff_inter_400_700: 'Inter', sans-serif;
+    --ff_lexend_400: 'Lexend Deca', sans-serif;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_bg {
+    height: 100vh;
+    width: 100vw;
+    background: var(--mainbg);
+}
+
+.center_div{
+    width: 70%;
+    height: 63%;
+    background-color: var(--cardbg);
+    border-radius: 8px;
+    display: flex;
+}
+
+.center_text {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.center_image {
+    height: 100%;
+    width: 50%;
+}
+
+.img{
+    background-image: url('./asset/images/image-header-desktop.jpg');
+    height: 100%;
+    width: auto;
+    position: relative;
+}
+
+.layer{
+    background-color: var(--softvio);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.center_text > h1 {
+    margin-left: 10%;
+    color: var(--main_head);
+    font-family: var(--ff_inter_400_700);
+    font-weight: 700;
+    font-size: 2.1rem;
+    margin-top: 15%;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+.center_text > p{
+    color: var(--stat_head);
+    font-family: var(--ff_inter_400_700);
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-left: 10%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+.achievement{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+.achieve > h1 {
+    color: var(--main_head);
+    font-family: var(--ff_inter_400_700);
+    font-family: 700;
+    font-size: 1.6em;
+}
+
+.achieve > p {
+    color: var(--stat_head);
+    font-family: var(--ff_inter_400_700);
+    font-size: 400;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
