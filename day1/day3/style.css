@@ -1,0 +1,130 @@
+/* Lexen Deca - 400 */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/* Big Shoulder - 700 */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bright_orange: hsl(31, 77%, 52%);
+    --dark_cyan: hsl(184, 100%, 22%);
+    --very_dark_cyan: hsl(179, 100%, 13%);
+
+    --color_para: hsla(0, 0%, 100%, 0.75);
+    --very_light_gray: hsl(0, 0%, 95%);
+
+    --fs: 15px;
+    --ff-ld: 'Lexend Deca';
+    --ff-bs: 'Big Shoulders Display';
+}
+
+
+.main_div {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_div{
+    height: 60%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.card > .head {
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.card > .head > img {
+    margin-left: 15%;
+    width: auto;
+    height: 35px;
+}
+
+.card > .text {
+    height: 50%;
+    width: 100%;
+}
+
+.card > .text > h1 {
+    font-family: var(--ff-bs);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--very_light_gray);
+    margin-left: 15%;
+}
+
+.card > .text > p {
+    color: var(--color_para);
+    font-family: var(--ff-ld);
+    font-weight: 400;
+    font-size: 12px;
+    word-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+    word-spacing: 3px;
+    letter-spacing: .8px;
+    margin-top: 10%;
+    line-height: 180%;
+}
+
+
+.btn {
+    height: 25.5%;
+    width: 100%;
+    display: flex;
+    margin-left: 15%;
+    align-items: center;
+}
+.btn > .read {
+    width: 40%;
+    height: 40%;
+    border: 1px solid white;
+    border-radius: 1rem;    
+}
+
+
+.card1 {
+    background-color: var(--bright_orange);
+    border-radius: 8px 0 0 8px;
+}   
+
+.card1 > .btn > .read {
+    color: var(--bright_orange);
+    font-family: var(--ff-ld);
+    font-weight: 400;
+}
+
+
+.card2{
+    background-color: var(--dark_cyan);
+}
+
+.card2 > .btn > .read {
+    color: var(--dark_cyan);
+    font-family: var(--ff-ld);
+    font-weight: 400;
+}
+
+
+.card3 {
+    background-color: var(--very_dark_cyan);
+    border-radius: 0 8px 8px 0;
+}
+
+.card3 > .btn > .read {
+    color: var(--very_dark_cyan);
+    font-family: var(--ff-ld);
+    font-weight: 400;
+}
