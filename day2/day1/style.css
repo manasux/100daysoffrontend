@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_div{
+    height: 100vh;
+    width: 100vw;
+    background: url('./bg.jpg');
+    background-size: 100% 100%;
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_div {
+    /* background-color: rosybrown; */
+    height: 30%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sound {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    border-radius: 8px;
+    border: 1px solid black;
+    transition: 0.1s all ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    cursor: pointer;
+    background-color: wheat;
+}
+
+kbd {
+    font-size: 40px;
+    color: white;
+}
